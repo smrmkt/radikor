@@ -2,7 +2,7 @@
 #-*-coding:utf-8-*-
 
 import argparse
-from lib.radiko_player import RadikoPlayer
+from radikor.radiko_player import RadikoPlayer
 
 # args
 parser = argparse.ArgumentParser()
