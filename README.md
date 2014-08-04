@@ -1,6 +1,6 @@
-RadikoPlayer
+Radikor
 =============
-RadikoPlayer is a python-based command-line Radiko player.
+Radikor is a python-based command-line Radiko player.
 
 [Radiko](http://radiko.jp/) is an internet protocol silumcast radio service in Japan (only people in Japan can use this web service). Though you can listen Radiko through their web site, no APIs are provided for developpers. This application enables you to listen Radiko, and also record stream to mp3 file. 
 
@@ -17,8 +17,9 @@ brew install rtmpdump mplayer ffmpeg swftools
 To install RadikoPlayer, simply clone this repository and execute radiko_player.py.
 
 ```
-git clone git@github.com:smrmkt/radiko_player.git
+git clone git@github.com:smrmkt/radikor.git
 cd radiko_player/src
+# play Tokyo-FM
 python radiko_player.py play FMT
 ```
 
@@ -29,14 +30,14 @@ You can choose play or record it. To listen broadcast program, you should assign
 To listen program, you should type:
 
 ```
-python radiko_player.py play $CH_ID
+python radikor.py play $CH_ID
 ```
 
 #### Record
 To record program, you should type:
 
 ```
-python radiko_player.py record $CH_ID $DURATION $OUT_DIR
+python radikor.py record $CH_ID $DURATION $OUT_DIR
 ```
 
 $DURATION is a record span (count by minutes). $OUT_DIR is a mp3 output output directory. File name is a $UNIX_TIMESTAMP.mp3 format. All options are required to execute this application.
@@ -45,7 +46,7 @@ $DURATION is a record span (count by minutes). $OUT_DIR is a mp3 output output d
 To get station list, you should type:
 
 ```
-python radiko_player.py list
+python radikor.py list
 ```
 
 You can get a station list like below:
@@ -68,3 +69,6 @@ Your region code is "JP14", and stations in your region are:
     "YFM": "ＦＭヨコハマ"
 }
 ```
+
+## Licence
+Modified BSD License
