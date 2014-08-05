@@ -2,12 +2,12 @@
 #-*-coding:utf-8-*-
 
 import argparse
-from radikor.radiko_player import RadikoPlayer
+from radikor.radikor import RadikoPlayer
 
 # args
 parser = argparse.ArgumentParser()
 parser.add_argument('menu', type=str)
-parser.add_argument('ch', nargs='?', type=str),
+parser.add_argument('ch', nargs='?', type=str, default='FMT'),
 parser.add_argument('duration', nargs='?', type=int)
 parser.add_argument('out_dir', nargs='?', type=str)
 
@@ -19,3 +19,6 @@ if __name__ == '__main__':
         RadikoPlayer(args.ch).record(args.duration, args.out_dir)
     elif args.menu == 'list':
         RadikoPlayer().list()
+
+
+

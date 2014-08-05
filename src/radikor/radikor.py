@@ -40,7 +40,6 @@ class RadikoPlayer:
         auth1_fms = self.__get_auth_fms(self.auth1_fms_url)
         self.auth_token, length, offset = self.__get_auth_params(auth1_fms)
         partial_key = self.__get_partial_key(offset, length)
-        # no need to use result of auth2
         auth2_fms = self.__get_auth_fms(self.auth2_fms_url, self.auth_token, partial_key)
         self.region = self.__get_region(auth2_fms)
         self.stream_url_parts = self.__get_stream_url(ch)
