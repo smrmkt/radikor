@@ -18,9 +18,9 @@ To install RadikoPlayer, simply clone this repository and execute radiko_player.
 
 ```
 git clone git@github.com:smrmkt/radikor.git
-cd radiko_player/src
+cd radikor/src
 # play Tokyo-FM
-python radiko_player.py play FMT
+python run_radikor.py play FMT
 ```
 
 ## Usage
@@ -30,14 +30,14 @@ You can choose play or record it. To listen broadcast program, you should assign
 To listen program, you should type:
 
 ```
-python radikor.py play $CH_ID
+python run_radikor.py play $CH_ID
 ```
 
 #### Record
 To record program, you should type:
 
 ```
-python radikor.py record $CH_ID $DURATION $OUT_DIR
+python run_radikor.py record $CH_ID $DURATION $OUT_DIR
 ```
 
 $DURATION is a record span (count by minutes). $OUT_DIR is a mp3 output output directory. File name is a $UNIX_TIMESTAMP.mp3 format. All options are required to execute this application.
@@ -46,7 +46,7 @@ $DURATION is a record span (count by minutes). $OUT_DIR is a mp3 output output d
 To get station list, you should type:
 
 ```
-python radikor.py list
+python run_radikor.py list
 ```
 
 You can get a station list like below:
@@ -54,19 +54,19 @@ You can get a station list like below:
 ```
 Your region code is "JP14", and stations in your region are:
 {
-    "BAYFM78": "bayfm78", 
-    "FMJ": "J-WAVE", 
-    "FMT": "TOKYO FM", 
-    "HOUSOU-DAIGAKU": "放送大学", 
-    "INT": "InterFM", 
-    "JORF": "ラジオ日本", 
-    "LFR": "ニッポン放送", 
-    "NACK5": "NACK5", 
-    "QRR": "文化放送", 
-    "RN1": "ラジオNIKKEI第1 ", 
-    "RN2": "ラジオNIKKEI第2", 
-    "TBS": "TBSラジオ", 
-    "YFM": "ＦＭヨコハマ"
+	"BAYFM78": "bayfm78", 
+	"FMJ": "J-WAVE", 
+	"FMT": "TOKYO FM", 
+	"HOUSOU-DAIGAKU": "放送大学", 
+	"INT": "InterFM", 
+	"JORF": "ラジオ日本", 
+	"LFR": "ニッポン放送", 
+	"NACK5": "NACK5", 
+	"QRR": "文化放送", 
+	"RN1": "ラジオNIKKEI第1 ", 
+	"RN2": "ラジオNIKKEI第2", 
+	"TBS": "TBSラジオ", 
+	"YFM": "ＦＭヨコハマ"
 }
 ```
 
