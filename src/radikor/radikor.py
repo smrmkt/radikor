@@ -20,7 +20,7 @@ class RadikoPlayer:
     list_xml_url = 'http://radiko.jp/v2/station/list/'
 
     # local files
-    tmp_dir = '/tmp/radiko_player'
+    tmp_dir = '/tmp/radikor'
     player_file = tmp_dir + '/player.swf'
     key_file = tmp_dir + '/authkey.png'
     partial_key_file = tmp_dir + '/partial_key'
